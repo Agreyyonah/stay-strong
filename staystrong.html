@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stay Strong, Careen!</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom, #fff9a1, #ffc1cc); /* Yellow to pink gradient */
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        .main-text {
+            font-size: 48px;
+            color: #6a0dad; /* Purple */
+            font-weight: bold;
+            animation: bounce 2s infinite; /* Bouncing animation */
+        }
+        .sub-text {
+            font-size: 24px;
+            color: #000;
+            font-style: italic;
+            margin-top: 10px;
+        }
+        .heart {
+            position: absolute;
+            font-size: 30px;
+            color: #ff4d4d; /* Red */
+            animation: float 3s infinite ease-in-out;
+        }
+        .sun {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 40px;
+            color: #ffd700; /* Gold */
+            animation: spin 4s infinite linear; /* Spinning sun */
+        }
+
+        /* Animations */
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-20px); }
+            60% { transform: translateY(-10px); }
+        }
+        @keyframes float {
+            0% { transform: translateY(0); opacity: 1; }
+            100% { transform: translateY(-100px); opacity: 0; }
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-text">Stay Strong, Careen!</div>
+    <div class="sub-text">From, Agrey</div>
+    <div class="sun">☀️</div>
+    <div class="heart" style="left: 20%; top: 60%; animation-delay: 0s;">❤️</div>
+    <div class="heart" style="left: 40%; top: 70%; animation-delay: 1s;">💖</div>
+    <div class="heart" style="left: 60%; top: 65%; animation-delay: 2s;">❤️</div>
+</body>
+</html>
